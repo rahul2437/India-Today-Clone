@@ -1,5 +1,8 @@
+import { getData } from '../components/indexcont3.js'
 import {header} from '../components/header.js'
 document.getElementById('header').innerHTML=header();
+
+getData();
 
 
 
