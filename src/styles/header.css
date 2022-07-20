@@ -17,8 +17,8 @@
     gap: 30px;
     border-bottom: 1px solid #d1d1d1;
     box-sizing: border-box;
-    text-size-adjust: none;
-    font: 400 15px/20px "OpenSans-Regular";
+    /* text-size-adjust: none; */
+    font-size: 25px;
     margin-bottom: 10px;
 }
 h3>a{

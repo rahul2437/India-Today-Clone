@@ -118,13 +118,54 @@ document.getElementById('searchIcon').onclick = function() {
 
   //............................news......................................
 
-  let url='https://newsdata.io/api/1/news?apikey=pub_9390d75a085744742e3aa8b7f64833f43328&q=indian'
+  let url='https://newsapi.org/v2/top-headlines?country=in&apiKey=3fbeddfb8b474c858aded713acc19c9c'
 
-  let getData = async ()=>{
-     let res= await fetch(url);
-     let data= await res.json();
+  async function getData()
+  {
+    let res=await fetch(url);
+    let data= await res.json();
 
-     console.log(data)
+    console.log(data.articles);
+    display(data.articles)
   }
+
+  getData()
+
+
+
+  function display(data)
+  {
+    let container=document.getElementById('indianews');
+
+    data.forEach((el)=>{
+        let image=document.createElement('img');
+        image.src=el.urlToImage;
+        image.style.width='250px';
+
+        let photo=document.createElement('div');
+        photo.append(image);
+
+
+        let title=document.createElement('h2');
+        title.innerText=el.title;
+
+        let desc=document.createElement('p');
+        desc.innerText=el.description
+
+        let div=document.createElement('div');
+        div.append(title,desc)
+
+        container.append(photo,div);
+    })
+  }
+
+
+
+
+
+
+
+
+
 
   
