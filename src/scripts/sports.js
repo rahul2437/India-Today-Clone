@@ -1,8 +1,5 @@
-import { getData } from '../components/indexcont3.js'
 import {header} from '../components/header.js'
 document.getElementById('header').innerHTML=header();
-
-getData();
 
 
 
@@ -123,3 +120,54 @@ document.getElementById('searchIcon').onclick = function() {
     document.getElementById('search').style.display = 'none';
     document.getElementById('clear').style.display = 'none';
   }
+
+
+
+
+
+
+
+const url='https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=3fbeddfb8b474c858aded713acc19c9c';
+
+  async function getData()
+  {
+    let res=await fetch(url);
+    let data= await res.json();
+
+    console.log(data.articles);
+    display(data.articles)
+  }
+
+  getData()
+
+
+
+  function display(data)
+  {
+    let container=document.getElementById('indianews');
+
+    data.forEach((el)=>{
+        let image=document.createElement('img');
+        image.src=el.urlToImage;
+        image.style.width='250px';
+
+        let photo=document.createElement('div');
+        photo.append(image);
+
+
+        let title=document.createElement('h2');
+        title.innerText=el.title;
+
+        let desc=document.createElement('p');
+        desc.innerText=el.description
+
+        let div=document.createElement('div');
+        div.append(title,desc)
+
+        container.append(photo,div);
+    })
+  }
+
+
+
+
