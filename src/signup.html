@@ -22,7 +22,7 @@
     <div id="box"> 
         <p id="heading">Sign up to India Today</p>
         <div id="country_name">
-            <select name="country" class="form-control" id="country">
+            <select name="country" class="boxs" id="country">
                 <option value="5" label="Select a country ... " selected="selected">Select a country ... </option>
                 <optgroup id="country-optgroup-Africa" label="Africa">
                     <option value="DZ" label="Algeria">Algeria</option>
@@ -287,11 +287,11 @@
                     <option value="WF" label="Wallis and Futuna">Wallis and Futuna</option>
                 </optgroup>
             </select>
-            <input type="text" id="name" placeholder="Enter your full name">
+            <input type="text" class="boxs" id="name" placeholder="Enter your full name">
         </div>
         <div id="email_password">
-            <input type="email" id="email" placeholder="Enter your email address">
-            <input type="password" id="password" placeholder="Enter your password">
+            <input type="email" class="boxs" id="email" placeholder="Enter your email address">
+            <input type="password" class="boxs" id="password" placeholder="Enter your password">
         </div>
         <div id="checklist">
             <form action="/action_page.php">
@@ -302,14 +302,16 @@
                 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
                 <label for="vehicle3"> I wish to receive custom communications i.e. Emails, newsletters, SMS, notifications from India Today based on my interests and my activities on the website.</label><br><br>
             </form>
-            <button id="submit">SUBMIT</button>
+            <div id="button">
+                <button id="submit">SUBMIT</button>
+            </div>
 
         </div>
         
     </div> 
-    
+
     <div id="footer">
-           
+           <p>Copyright © 2022 Living Media Limited For reprint Syndications Today | Privacy Policy | Cancellation & Refund | Customer Care</p>
     </div> 
 
 </body>
