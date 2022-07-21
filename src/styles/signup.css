@@ -33,7 +33,10 @@
     margin: 10%;
 }
 #submit{
-    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 42%;
 }
 #navbar{
     width: 100%;
