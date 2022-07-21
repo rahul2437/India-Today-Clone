@@ -1,3 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+  }
 #indianews{
     width: 80%;
     height:auto;
@@ -5,6 +13,7 @@
     /* border:1px solid black; */
     margin-left: 12%;
 }
+
 
 p{
     box-sizing: border-box;
