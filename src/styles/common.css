@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/styles/india.css
 * {
   padding: 0;
   margin: 0;
@@ -22,6 +23,32 @@ p {
   font-size: 25px;
   cursor: pointer;
   margin-left: 12%;
+=======
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+  }
+#indianews{
+    width: 80%;
+    height:auto;
+    padding: 10px;
+    /* border:1px solid black; */
+    margin-left: 12%;
+}
+
+
+p{
+    box-sizing: border-box;
+    color: #595959;
+    font-family: "OpenSans-Regular";
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 12%;
+>>>>>>> 7937c6a17549091a753e9cdc38712c6cff8710c9:src/styles/common.css
 }
 hr {
   width: 80%;

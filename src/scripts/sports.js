@@ -160,13 +160,21 @@ const url='https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKe
 
         let desc=document.createElement('p');
         desc.innerText=el.description
+        desc.style.marginLeft='-0.1px'
 
         let div=document.createElement('div');
         div.append(title,desc)
+        div.style.padding='5px 10px'
 
-        container.append(photo,div);
+        let box=document.createElement('div');
+        box.append(photo,div);
+        box.style.display='flex'
+        box.style.marginBottom='20px'
+
+        container.append(box);
     })
   }
+
 
 
 
