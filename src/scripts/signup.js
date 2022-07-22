@@ -1,3 +1,4 @@
+
 function Regitration(e) {
     e.preventDefault();
 
@@ -5,6 +6,9 @@ function Regitration(e) {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         password: document.getElementById("password").value,
+        username: document.getElementById("username").value,
+        mobile: document.getElementById("mobile").value,
+        description: document.getElementById("description").value,
     };
 
     formdata = JSON.stringify(formdata);
