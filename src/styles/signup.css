@@ -70,7 +70,6 @@
     justify-content: center;
     align-items: center;
 }
-
 #backnav{
     display: flex;
 }
@@ -94,12 +93,10 @@
     display: flex;
     text-align: center;
     justify-content: center;
-
 }
 #logo{
     margin-right: 30px;
 }
-
 #backnavbar>p{
     display: inline-block;
     vertical-align: top;

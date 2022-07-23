@@ -1,5 +1,4 @@
-function header()
-{
+function header() {
     return `    
     <div id="navbar1">
         <h3>
@@ -105,4 +104,4 @@ function header()
     `;
 }
 
-export {header};
+export { header };
