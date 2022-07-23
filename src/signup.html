@@ -12,7 +12,7 @@
    <div id="navbar">
     <div id="backnavbar">
         <img src="https://img.icons8.com/carbon-copy/72/return.png" alt="">
-        <p>Back To India Today</p>
+        <p><a href="index.html">Back To India Today</a></p>
     </div>
     <div id="logo">
         <img src="https://auth.indiatoday.in/sites/all/themes/itg/images/span_itg_group.png" alt="">
@@ -21,6 +21,7 @@
    <!-- -----------------nav end  --------------  -->
     <div id="box"> 
         <p id="heading">Sign up to India Today</p>
+        <p id="subheading">Already a registered =><a href="signin.html">Login</a></p>
         <div id="country_name">
             <select name="country" class="boxs" id="country">
                 <option value="5" label="Select a country ... " selected="selected">Select a country ... </option>
@@ -287,14 +288,19 @@
                     <option value="WF" label="Wallis and Futuna">Wallis and Futuna</option>
                 </optgroup>
             </select>
-            <input type="text" class="boxs" id="name" placeholder="Enter your full name">
         </div>
-        <div id="email_password">
-            <input type="email" class="boxs" id="email" placeholder="Enter your email address">
-            <input type="password" class="boxs" id="password" placeholder="Enter your password">
-        </div>
+            <form id="Form" onsubmit="Regitration(event)">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <input type="text" name="username" id="username" placeholder="username"> 
+                <input type="number" name="mobile" id="mobile" placeholder="Mobile number"> 
+                <input type="text" name="description" id="description" placeholder="description">
+                <button id="submit">SUBMIT</button>
+            </form>
+        
         <div id="checklist">
-            <form action="/action_page.php">
+            <form>
                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                 <label for="vehicle1"> I agree to the <a href="">SSO login privacy terms</a> and I warrant that I am above 16 years of age.</label><br>
                 <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
@@ -302,9 +308,7 @@
                 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
                 <label for="vehicle3"> I wish to receive custom communications i.e. Emails, newsletters, SMS, notifications from India Today based on my interests and my activities on the website.</label><br><br>
             </form>
-            <div id="button">
-                <button id="submit">SUBMIT</button>
-            </div>
+            <div id="button"></div>
 
         </div>
         

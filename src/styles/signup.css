@@ -59,7 +59,17 @@
     justify-content: space-between;
     
 }
-
+#Form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    height: 250px;
+}
+#submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #backnav{
     display: flex;
 }
@@ -71,16 +81,22 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
+#subheading{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
 #backnavbar{
     display: flex;
     text-align: center;
     justify-content: center;
-
 }
 #logo{
     margin-right: 30px;
 }
-
 #backnavbar>p{
     display: inline-block;
     vertical-align: top;

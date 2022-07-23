@@ -23,6 +23,7 @@ function getLogin(e){
     .then((response)=> {
         alert("login Successfuly");
         getMyprofile(response,mydata)
+        window.location.href = "index.html";
     })
     .catch((err)=>{
         alert(err.message);
