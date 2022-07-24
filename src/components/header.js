@@ -45,7 +45,7 @@ function header() {
 <div id="navbar2">
     <div id="bar1">
         <h2 id="news">NEWS</h2>
-        <h2 id="live">LIVE TV</h2>
+        <h2 id="live"><a href="livetv.html">LIVE TV</a></h2>
         <div id="logo">
             <img src="https://akm-img-a-in.tosshub.com/sites/all/themes/itg/logo.png?v=1.52" 
             alt="IndiaToday" id="logo">
@@ -61,7 +61,7 @@ function header() {
         <i class='fas fa-bars'></i>   
     </div>
    <div id="categories">
-        <div id="home">HOME</div>
+        <div id="home"><a href="index.html">HOME</a></div>
         <div>MY FEED</div>
         <div id="india">INDIA</div>
         <div id="world">WORLD</div>
