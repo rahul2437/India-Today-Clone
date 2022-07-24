@@ -1,6 +1,8 @@
 import { getData } from '../components/indexcont3.js'
 import { header } from '../components/header.js'
 document.getElementById('header').innerHTML = header();
+import { footer } from '../components/footer.js'
+document.getElementById('footer').innerHTML = footer();
 
 getData();
 
