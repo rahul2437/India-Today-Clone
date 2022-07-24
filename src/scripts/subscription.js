@@ -1,3 +1,7 @@
+// import {header} from '../components/header.js'
+// document.getElementById('header').innerHTML=header();
+
+
 var arr = [
     { 
           title: 'PRINT',
@@ -67,6 +71,7 @@ arr.forEach(function(e){
 
 
  var ld=document.createElement("div")
+ ld.setAttribute("id","ld")
  ld.append(b,c,rsp,i)
  var z=document.querySelector("#container")
  z.append(ld)
